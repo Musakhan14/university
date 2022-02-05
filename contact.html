@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>ABOUT</title>
+</head>
+<body>
+    <!-- header section  -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+
+            <!-- <i class="fa-solid fa-bars"  onclick="showMenu"></i> -->
+        </nav>
+  <h1>CONTACT US</h1>
+    </section>
+
+    <!-- Contact us content -->
+  <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d39236884.74779956!2d128.0354522849226!3d53.113255647225216!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1644055442317!5m2!1sen!2s" width="89%" height="450" style="border:0;"  allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="contact-us">
+      <div   class="row">
+              <div class="contact-col">
+              <div>
+                   <i class="fa fa-home" ></i>
+                    <span>
+                        <h5>XVZ Road, ABC building</h5>
+                        <p>Peshawar, karachi , IN</p>
+                 </span>      
+              </div>
+
+             <div>
+                 <i class="fa fa-phone" ></i>
+                  <span>
+                        <h5>+1 5765873874753</h5>
+                         <p>Monday to saturday, 10AM to 6PM</p>
+                  </span>      
+             </div>
+      
+
+             <div>
+                <i class="fa fa-envelope-o" ></i>
+                 <span>
+                       <h5>abcde.com</h5>
+                        <p> Email us your query </p>
+                 </span>      
+            </div>
+      </div>
+      <div class="contact-col">
+        <form action="form-handler.php " method="post">
+            <input type="text" name="name" placeholder="Enter your name" required id="">
+            <input type="email" name="email" placeholder="Enter your email address" required id="">
+            <input type="text" name="subject" placeholder="Enter your subject" required id="">
+            <textarea rows="8" name="message" placeholder="Message"></textarea>
+            <button type="submit" class="hbutton red-btn"> Send message</button>
+        </form>
+     </div>
+      </div>
+  </section>
+
+<!-- footer -->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione inventore exercitationem aut quibusdam accusantium, b
+        <br> consequuntur nemo, laboriosam aperiam delectus minima</p>
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+        <p>Made With  <i class="fa fa-heart-0" ></i> Easy Totorials </p>
+</section>
+
+
+<!-- javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right='0';
+            // document.getElementById('navLinks').style.right='0';
+        }
+        function hideMenu(){
+            // document.getElementById('navLinks').style.right='0';
+
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
